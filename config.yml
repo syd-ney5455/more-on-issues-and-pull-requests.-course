@@ -1,0 +1,16 @@
+title: More on issues and pull requests.
+description: Learn more about issues and pull requests.
+template:
+  repo: more-on-issues-and-pull-requests.-template
+  name: more-on-issues-and-pull-requests.
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
